@@ -1,1 +1,27 @@
 Following code repo for Creating a Hello World Docker file and then install it.
+
+Excersise Information 
+        >Hello World Container
+		>Create a Dockerfile that:
+		>Uses alpine as the base image.
+		>Prints "Hello Docker!" when run.
+		>Build the image and run it.
+
+Step 1: Create a Dockerfile
+
+# Use Alpine Linux as the base image
+FROM alpine:latest
+
+# Define the command to run when the container starts
+CMD ["echo", "Hello Docker!"]
+
+Step 2: Build the Docker image
+
+docker build -t hello-docker .
+
+Step 3: Run the container
+
+docker run hello-docker
+
+
+Please note this will work on the machine where docker is installed 
